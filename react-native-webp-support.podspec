@@ -16,9 +16,8 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/TGPSKI/react-native-webp-support.git", :tag => "#{s.version}" }
 
-  s.source_files  = "./*.{h,m}"
-  spec.ios.vendored_frameworks = 'Frameworks/WebP.framework'
-  spec.ios.vendored_frameworks = 'Frameworks/WebPDemux.framework'
+  s.source_files  = "**/*.{h,m}"
+  s.vendored_frameworks = 'WebP.framework', 'WebPDemux.framework'
   s.requires_arc = true
 
   s.dependency "React"

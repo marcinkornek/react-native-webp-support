@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13BE3DEE1AC21097009241FE /* DBAWebpImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* DBAWebpImageDecoder.m */; };
-		DD36716A1C4CD71B00240671 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3671691C4CD71B00240671 /* WebP.framework */; };
+		1EE4DC6722DF7A1300AA84D3 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4DC6522DF7A1300AA84D3 /* WebP.framework */; };
+		1EE4DC6822DF7A1300AA84D3 /* WebPDemux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4DC6622DF7A1300AA84D3 /* WebPDemux.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +28,8 @@
 		134814201AA4EA6300B7C361 /* libReactNativeWebp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeWebp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BE3DEC1AC21097009241FE /* DBAWebpImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAWebpImageDecoder.h; sourceTree = "<group>"; };
 		13BE3DED1AC21097009241FE /* DBAWebpImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAWebpImageDecoder.m; sourceTree = "<group>"; };
-		DD3671691C4CD71B00240671 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		1EE4DC6522DF7A1300AA84D3 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		1EE4DC6622DF7A1300AA84D3 /* WebPDemux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebPDemux.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD36716A1C4CD71B00240671 /* WebP.framework in Frameworks */,
+				1EE4DC6822DF7A1300AA84D3 /* WebPDemux.framework in Frameworks */,
+				1EE4DC6722DF7A1300AA84D3 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,10 +56,11 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				DD3671691C4CD71B00240671 /* WebP.framework */,
 				13BE3DEC1AC21097009241FE /* DBAWebpImageDecoder.h */,
 				13BE3DED1AC21097009241FE /* DBAWebpImageDecoder.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				1EE4DC6522DF7A1300AA84D3 /* WebP.framework */,
+				1EE4DC6622DF7A1300AA84D3 /* WebPDemux.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +103,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
