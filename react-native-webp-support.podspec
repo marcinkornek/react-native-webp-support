@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/TGPSKI/react-native-webp-support.git", :tag => "#{s.version}" }
 
-  s.source_files  = "**/*.{h,m}"
+  s.source_files  = "DBAWebpImageDecoder.{h,m}"
   s.vendored_frameworks = 'WebP.framework', 'WebPDemux.framework'
   s.requires_arc = true
 
