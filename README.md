@@ -1,6 +1,6 @@
 # react-native-webp-support
 
-**Forked from [dbasedow/react-native-webp](https://github.com/dbasedow/react-native-webp)**
+**Forked from [OvalMoney/react-native-webp-support](https://github.com/OvalMoney/react-native-webp-support)**
 
 react-native-webp-support adds support for WebP images for react-native components. This fork includes additional documentation to help users incorporate WebP support into their projects.
 
@@ -20,9 +20,22 @@ See [react-native Image API documentation](https://facebook.github.io/react-nati
 __iOS support:__ Add WebP / WebPDemux frameworks and link `react-native-webp.xcodeproj` to your project.
 
 # Installation
+## for React Native 0.60+
 
-## Android
+### Android
+no steps are required, just
+1. Build a new binary, and use `.webp` formatted images
 
+### iOS
+1. Install Pods
+```
+$ cd ios && pod install && cd ..
+```
+2. Build a new binary, and use `.webp` formatted images
+
+## for React Native <0.60
+
+### Android
 1. Add the following dependency to `android/app/build.gradle`:
 
 ```java
@@ -42,8 +55,7 @@ dependencies {
 
 2. Build a new binary, and use `.webp` formatted images
 
-## iOS
-
+### iOS
 1. `yarn add TGPSKI/react-native-webp-support`
 2. Open your project in Xcode
 3. Add `WebP.framework` and `WebPDemux.framework` from node_modules/react-native-webp-support/ to your project files (Right click your project and select "Add Files to ...")
